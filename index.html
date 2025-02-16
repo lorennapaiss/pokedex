@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokédex</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Pokédex</h1>
+        
+        <div class="search-container">
+            <input type="text" id="pokemonName" placeholder="Digite o nome do Pokémon">
+            <button onclick="searchPokemon()"><i class="fas fa-search"></i> Buscar</button>
+        </div>
+    
+        <div id="loading" class="hidden">Carregando...</div>
+    
+        <div id="pokemonInfo" class="hidden">
+            <img id="pokemonImage" src="" alt="Imagem do Pokémon">
+            <h2 id="pokeName"></h2>
+            <p><strong>ID:</strong> <span id="pokeId"></span></p>
+            <p><strong>Tipo:</strong> <span id="pokeType"></span></p>
+            <p><strong>Altura:</strong> <span id="pokeHeight"></span> m</p>
+            <p><strong>Peso:</strong> <span id="pokeWeight"></span> kg</p>
+            <p><strong>Habilidades:</strong> <span id="pokeAbilities"></span></p>
+    
+            <ul id="pokeStats"></ul>
+    
+            <h3 class="titulo-fraquezas">Fraquezas e Resistências</h3>
+            <p><strong>Fraquezas:</strong> <span id="pokeWeaknesses"></span></p>
+            <p><strong>Resistências:</strong> <span id="pokeResistances"></span></p>
+            <p><strong>Imunidades:</strong> <span id="pokeImmunities"></span></p>
+    
+            <button onclick="addToFavorites()"><i class="fas fa-star"></i> Adicionar aos favoritos</button>
+        </div>
+    
+        <div class="favorites-container">
+            <h3 class="favorites">Favoritos</h3>
+            <ul id="favoritesList"></ul>
+        </div>
+    </div>    
+    <script src="script.js"></script>
+</body>
+</html>

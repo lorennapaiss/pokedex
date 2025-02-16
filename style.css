@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #F08A01;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background: white;
+    max-width: 600px;
+    width: 90%;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    transition: 0.3s ease-in-out;
+}
+
+h1 {
+    color: white;
+    background: #000000;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    font-size: 28px;
+}
+
+.search-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+    justify-content: center;
+}
+
+input {
+    padding: 12px;
+    font-size: 16px;
+    border: 2px solid #000000;
+    border-radius: 8px;
+    width: 70%;
+    outline: none;
+}
+
+button {
+    padding: 12px 18px;
+    background-color: #000000;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #333333;
+}
+
+.hidden {
+    display: none;
+}
+
+img {
+    width: 10%;
+    height: auto;
+    border-radius: 10px;
+}
+
+#pokemonInfo {
+    margin-top: 20px;
+    padding: 15px;
+    background: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+#pokemonImage {
+    width: 150px;
+    height: auto;
+    margin-top: 10px;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+#pokemonImage:hover {
+    transform: scale(1.1);
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.95); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+ul li {
+    background: #F08A01;
+    color: white;
+    padding: 8px;
+    margin: 5px 0;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.favorites-container {
+    margin-top: 20px;
+    padding: 15px;
+    background: #fff3e6;
+    border-radius: 10px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.favorite-item {
+    background: #F08A01;
+    font-weight: bold;
+    padding: 12px;
+    border-radius: 10px;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.favorite-item button {
+    background-color: #000000;
+    color: white;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.favorite-item button:hover {
+    background-color: #ff9900;
+}
+
+.titulo-fraquezas {
+    color: #000000;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.favorites {
+    color: #000000;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.favoritesList{
+    text-transform: capitalize;
+}
+
+#pokeWeaknesses, #pokeResistances, #pokeImmunities {
+    font-weight: bold;
+}
+
+#pokeWeaknesses { color: #F08A01; }
+#pokeResistances { color: #F08A01; }
+#pokeImmunities { color: #F08A01; }
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .container {
+        max-width: 90%;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    input {
+        width: 65%;
+        font-size: 14px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    #pokemonImage {
+        width: 120px;
+    }
+}
