@@ -72,5 +72,5 @@ Sinta-se à vontade para contribuir! Faça um **fork** do repositório, crie uma
 
 Este projeto está sob a licença MIT.  
 
-📝 Feito com ❤️ por [Lorenna Pis](https://github.com/lorennapais)
+📝 Feito com ❤️ por [Lorenna Pis](https://github.com/lorennapaiss)
 ```
